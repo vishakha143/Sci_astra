@@ -1,0 +1,50 @@
+<% layout('/layouts/boilerplate') %>
+<style>
+    .btns{
+        display: flex;
+        justify-content:space-evenly;
+    }
+</style>
+<div class="row">
+    <div class="col-8 offset-3 mt-3">
+          <h3><%=blog.title%></h3>
+    </div>
+    <div class="card col-7 offset-3 show-card">
+
+            <img src=<%= blog.image_url%> />
+ 
+        <div class="card-body">
+            <p class="card-text">
+                <b><%=blog.content%></b> 
+            </p>
+            <p class="card-text">
+                <b><%=blog.publish_date%></b> 
+            </p>
+            <p class="card-text">
+            <b><%=blog.statuc%></b> 
+            </p>
+        </div>            
+    </div>
+    <div class="btns mb-3">
+        <a 
+            href=""
+            class="btn btn-dark offset-3">
+            Edit
+        </a>
+        <form
+        action="" 
+        method="POST">
+            <button
+                class="btn btn-outline-danger ">
+                Delete
+            </button>
+        </form>
+        <form action="/blog/<%=blog.id%>/pay" method="GET">
+            <button  class="btn btn-success" onclick="onButtonClick()">
+                Open Instapay
+            </button>
+       </form>
+    </div>
+    </div>
+</div>
+

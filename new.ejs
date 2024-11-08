@@ -1,0 +1,59 @@
+<% layout('/layouts/boilerplate') -%>
+    
+   <div class="col-6 offset-2">
+    <h1>New course</h1>
+    <form action="/blog"  method="POST"  novalidate   class="needs-validation" enctype="application/x-www-form-urlencoded">
+        
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input  
+            name="title"  
+            placeholder="Java crashcourse" 
+            type="text"
+            class="form-control"
+            required
+            />
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <input  
+            name="content"  
+            placeholder="8 hours Java crashcourse " 
+            type="text"
+            class="form-control"
+            required
+            />
+        </div>
+        <div class="mb-3">
+            <label for="publish_date" class="form-label">Publish Date</label>
+            <input  
+            name="publish_date"  
+            placeholder="12/10/25 12:00Pm" 
+            type="datetime-local"
+            class="form-control"
+            required
+            />
+        </div>
+        <div class="mb-3">
+            <label for="statuc" class="form-label">Status</label>
+            <input  
+            name="statuc"  
+            placeholder="status" 
+            type="text"
+            class="form-control"
+            required
+            />
+        </div>
+        <div class="mb-3">
+            <label for="image_url" class="form-label">Image</label>
+            <input  
+            name="image_url"  
+            placeholder="---link---" 
+            type="text"
+            class="form-control"
+            required
+            />
+        </div>
+        <button class="btn btn-dark mb-3">Click me</button>
+    </form>
+    </div>
