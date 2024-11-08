@@ -1,0 +1,54 @@
+<style>
+    .search-btn{
+       background-color:brown;
+       color : white;
+       border-radius: 25px;
+       padding: 0 1rem 0 1rem;
+    }
+    
+    .search-btn:hover{
+       background-color:cadetblue;
+       color : white;
+    }
+    .search-btn i {
+      display: inline;
+      margin-right: 0.5rem;
+    }
+  .search-inp{
+  border-radius: 25px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  font-size: 0.8rem;
+  } 
+    
+    a .study{
+        color:brown;
+        font-size:xx-large;
+        font-weight: bolder;
+    }
+ </style>
+
+
+
+
+<nav class="navbar navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand " href="/"><i class="fa-brands fa-studiovinari study"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav">
+            <a class="nav-link" href="/blog">SciAstra</a> 
+        </div>
+
+        <div class="navbar-nav ms-auto">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 search-inp " type="search" placeholder="Search courses" aria-label="Search">
+            <button class="btn search-btn" type="submit"><span class="material-symbols-outlined ">search</span> search</button>
+          </form>
+            <a class="nav-link" href="/blog/new">Add new courses</a>
+        </div>
+      
+    </div>
+  </nav>
